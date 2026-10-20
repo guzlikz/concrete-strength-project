@@ -1,0 +1,137 @@
+{
+  "quality": {
+    "raw_rows": 1030,
+    "clean_rows": 1005,
+    "duplicates_removed": 25,
+    "missing_values": 0,
+    "sha256_xls": "710076c66b9ca3f8050e7942f3dcbdbe04013534daeb0077ffd3079a52d8e0c4"
+  },
+  "split": {
+    "train_rows": 799,
+    "test_rows": 206,
+    "total_recipes": 428,
+    "train_recipes": 342,
+    "test_recipes": 86,
+    "recipe_overlap": 0
+  },
+  "seed": 42,
+  "best_forest_params": {
+    "max_depth": 15,
+    "max_features": 0.8,
+    "min_samples_leaf": 1
+  },
+  "n_estimators": 300,
+  "rmse_reduction_pct": 38.84711273734195,
+  "metrics": [
+    {
+      "model": "Среднее",
+      "MAE": 14.476311461428885,
+      "RMSE": 18.016431054057758,
+      "R2": -0.005989977673658942,
+      "train_RMSE": 15.800359652049108,
+      "max_abs_error": 47.633913101786796,
+      "cv_rmse_mean": 15.79031202110188,
+      "cv_rmse_std": 0.6962866505526317
+    },
+    {
+      "model": "Линейная регрессия",
+      "MAE": 8.678090211218963,
+      "RMSE": 10.791779610188804,
+      "R2": 0.6390539769311376,
+      "train_RMSE": 10.126848036558485,
+      "max_abs_error": 34.75118473868473,
+      "cv_rmse_mean": 10.333589915208396,
+      "cv_rmse_std": 0.7162356387388362
+    },
+    {
+      "model": "Случайный лес",
+      "MAE": 4.616148466421205,
+      "RMSE": 6.599484818653278,
+      "R2": 0.8650178957191517,
+      "train_RMSE": 1.8146050864086276,
+      "max_abs_error": 27.218019641217843,
+      "cv_rmse_mean": 5.95916547823108,
+      "cv_rmse_std": 0.8358666550324774
+    }
+  ],
+  "top3_forest": [
+    {
+      "row_id": 382,
+      "cement": 315.0,
+      "slag": 137.0,
+      "fly_ash": 0.0,
+      "water": 145.0,
+      "superplasticizer": 5.9,
+      "coarse_aggregate": 1130.0,
+      "fine_aggregate": 745.0,
+      "age": 28,
+      "strength": 81.75116932,
+      "pred_linear": 46.999984581315275,
+      "pred_forest": 54.53314967878216,
+      "error_linear": -34.75118473868473,
+      "error_forest": -27.218019641217843,
+      "abs_error_linear": 34.75118473868473,
+      "abs_error_forest": 27.218019641217843,
+      "nearest_train_row": 357,
+      "nearest_distance": 1.714533310234674,
+      "nearest_strength": 63.14221208,
+      "age_group": "8–28"
+    },
+    {
+      "row_id": 510,
+      "cement": 424.0,
+      "slag": 22.0,
+      "fly_ash": 132.0,
+      "water": 168.0,
+      "superplasticizer": 8.92,
+      "coarse_aggregate": 822.0,
+      "fine_aggregate": 750.0,
+      "age": 28,
+      "strength": 72.09850532,
+      "pred_linear": 51.02540577604069,
+      "pred_forest": 51.14417687611655,
+      "error_linear": -21.07309954395931,
+      "error_forest": -20.954328443883448,
+      "abs_error_linear": 21.07309954395931,
+      "abs_error_forest": 20.954328443883448,
+      "nearest_train_row": 509,
+      "nearest_distance": 1.0123722084511018,
+      "nearest_strength": 32.01138571527068,
+      "age_group": "8–28"
+    },
+    {
+      "row_id": 383,
+      "cement": 505.0,
+      "slag": 0.0,
+      "fly_ash": 60.0,
+      "water": 195.0,
+      "superplasticizer": 0.0,
+      "coarse_aggregate": 1030.0,
+      "fine_aggregate": 630.0,
+      "age": 28,
+      "strength": 64.0178466,
+      "pred_linear": 46.48281933094839,
+      "pred_forest": 44.924051062535135,
+      "error_linear": -17.53502726905161,
+      "error_forest": -19.093795537464864,
+      "abs_error_linear": 17.53502726905161,
+      "abs_error_forest": 19.093795537464864,
+      "nearest_train_row": 751,
+      "nearest_distance": 1.624233078024787,
+      "nearest_strength": 44.0919902,
+      "age_group": "8–28"
+    }
+  ],
+  "train_target_range": [
+    2.331807832,
+    80.19984832
+  ],
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2",
+    "xlrd": "2.0.2"
+  }
+}
